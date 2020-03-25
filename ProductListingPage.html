@@ -17,42 +17,44 @@
       <li>在庫</li>
     </ul>
   </header>
-  <section class="Listing-page">
-    <div class="listing-title">
+  <section class="listing-page-wrapper">
+    <div class="listing-title-wrapper">
       <h1>商品一覧</h1>
     </div>
-    <form class="search-form">
-      <div class="search-criteria">
-        <div class="search-criteria-wrapper">
-          <div id="searchCondition1">
-            <input id="product-name" type="text" placeholder="商品名">
+    <div class="search-criteria-wrapper">
+      <form>
+        <div class="search-criteria">
+          <div class="search-condition-wrapper">
+            <div id="searchCondition1">
+              <input id="product-name" type="text" placeholder="商品名">
+            </div>
           </div>
-        </div>
-        <div class="search-criteria-wrapper">
-          <div id="searchCondition2">
-            <input id="product-code" type="text" placeholder="商品コード">
+          <div class="search-condition-wrapper">
+            <div id="searchCondition2">
+              <input id="product-code" type="text" placeholder="商品コード">
+            </div>
           </div>
-        </div>
-        <div class="search-criteria-wrapper">
-          <div id="searchCondition3">
-            <select id="product-genre-label" value="">
-              <option value='' disabled selected style='display:none;'>ジャンル</option>
-              <option value="1">靴・スニーカー</option>
-              <option value="2">トップス</option>
-              <option value="3">バッグ</option>
-            </select>
+          <div class="search-condition-wrapper">
+            <div id="searchCondition3">
+              <select id="product-genre-label" value="">
+                <option value='' disabled selected style='display:none;'>ジャンル</option>
+                <option value="1">靴・スニーカー</option>
+                <option value="2">トップス</option>
+                <option value="3">バッグ</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="search-criteria-wrapper">
-          <div id="searchCondition4">
-            <div class="search-condition-wrapper">
-              <input id="end-of-sale" type="checkbox" name="product-end" value="1">販売終了
+          <div class="search-condition-wrapper">
+            <div id="searchCondition4">
+              <div class="search-condition-wrapper">
+                <input id="end-of-sale" type="checkbox" name="product-end" value="1">販売終了
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </form>
-    <div class="search-functions">
+      </form>
+    </div>
+    <div class="search-functions-wrapper">
       <div class="search-functions-paginator">
         -- Paginator area --
       </div>
@@ -62,8 +64,8 @@
         <a href="#" id="search-button" class="button active">検索</a>
       </div>
     </div>
-    <div class="search-results">
-      <table class="results">
+    <div class="search-results-wrapper">
+      <table class="search-results">
         <thead>
           <tr>
             <th class="width-no">No.</th>

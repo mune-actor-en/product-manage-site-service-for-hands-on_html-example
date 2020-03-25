@@ -17,15 +17,15 @@
       <li>在庫</li>
     </ul>
   </header>
-  <section class="registering-page">
-    <div class="registering-title">
-      <div class="registering-title-wrapper">
+  <section class="registering-page-wrapper">
+    <div class="registering-title-wrapper">
+      <div class="registering-title">
         <h1>商品登録</h1>
       </div>
     </div>
-    <div class="registering-conditions">
-      <div class="registering-conditions-wrapper">
-        <form class="registering-form">
+    <div class="registering-criteria-wrapper">
+      <div class="registering-criteria">
+        <form>
           <div class="registering-area-wrapper left">
             <div class="registering-condition-wrapper">
               <input id="product-code" type="text" placeholder="*商品コード">
@@ -34,14 +34,12 @@
               <input id="product-name" type="text" placeholder="*商品名">
             </div>
             <div class="registering-condition-wrapper">
-              <div class="registering-condition-wrapper">
-                <select id="product-genre" value="">
-                  <option value='' disabled selected style='display:none;'>*ジャンル</option>
-                  <option value="1">靴・スニーカー</option>
-                  <option value="2">トップス</option>
-                  <option value="3">バッグ</option>
-                </select>
-              </div>
+              <select id="product-genre" value="">
+                <option value='' disabled selected style='display:none;'>*ジャンル</option>
+                <option value="1">靴・スニーカー</option>
+                <option value="2">トップス</option>
+                <option value="3">バッグ</option>
+              </select>
             </div>
             <div class="registering-condition-wrapper">
               <input id="product-size-standard" type="text" placeholder="サイズ・規格">
@@ -60,16 +58,17 @@
             </div>
           </div>
           <div class="registering-area-wrapper right">
-            <p class="form-field">商品イメージ</p>
+            <p>商品イメージ</p>
             <img src="img/ABCD123.png" class="image-preview" />
             <a id="file-input-button" href="#" class="button active">画像のアップロード</a>
             <a id="file-input-clear-button" href="#" class="button">画像のクリア</a>
           </div>
         </form>
+        <!-- </div> -->
       </div>
     </div>
-    <div class="registering-functions">
-      <div class="registering-functions-wrapper">
+    <div class="registering-functions-wrapper">
+      <div class="registering-functions">
         <a id="return-button" href="ProductListingPage.html" class="button">戻る</a>
         <a id="save-button" href="#" class="button active">登録</a>
       </div>
