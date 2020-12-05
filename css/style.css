@@ -532,16 +532,16 @@ body {
 
 .registering-criteria-wrapper .form-field.width-wide {
   width: 40rem;
+}
+
+.registering-criteria-wrapper .validation-error {
+  margin-top: 0.2rem;
 } */
 
 .registering-criteria-wrapper p {
   margin-top: 30px;
   font-size: 1.4rem;
   display: block;
-}
-
-.registering-criteria-wrapper .validation-error {
-  margin-top: 0.2rem;
 }
 
 .registering-functions-wrapper {
